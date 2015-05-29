@@ -55,3 +55,4 @@ def application_error(e):
 	return 'Sorry, unexpected error: {}'.format(e), 500
 if __name__ == '__main__':
     db.create_all()
+    app.run()
