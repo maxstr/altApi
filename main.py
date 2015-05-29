@@ -10,7 +10,7 @@ import flask.ext.restless
 
 # create our flask app object
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://rjynscmuvfqblv:hqFcv2oTkdvw8E5weVofqGNPIU@ec2-54-235-134-167.compute-1.amazonaws.com:5432/d9grr5a4i9edm8'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///main.db'
 
 db = flask.ext.sqlalchemy.SQLAlchemy(app)
 
