@@ -39,7 +39,7 @@ class Produce(db.Model):
     season = db.Column(db.Text)
 
 manager = flask.ext.restless.APIManager(app, flask_sqlalchemy_db=db)
-manager.create_api(User, methods=['GET', 'POST', 'DELETE'])
+manager.create_api(User, methods=['GET', 'POST', 'DELETE', 'OPTIONS'])
 
 
 
